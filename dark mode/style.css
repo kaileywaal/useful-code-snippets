@@ -1,0 +1,11 @@
+.light-mode {
+  /* Add color variables here */
+  --color-background: #fff;
+  --color-secondary: #333;
+}
+
+.dark-mode {
+  /* Add dark mode version of color variables (with same name) here */
+  --color-background: #555;
+  --color-secondary: #fff;
+}
