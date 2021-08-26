@@ -1,0 +1,85 @@
+/* Add .hamburger-icon class to container with 3 .bar divs */
+.hamburger-icon {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.bar {
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  margin: 8px 0;
+  transition: transform 0.4s;
+}
+
+.collapsible--open .bar1 {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.collapsible--open .bar2 {
+  opacity: 0;
+}
+
+.collapsible--open .bar3 {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+/* Style nav bar however you wish. */
+/* Nav Bar */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-items {
+  padding: 0;
+}
+
+.nav-item {
+  display: none;
+}
+
+.collapsible--open {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.collapsible--open .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  overflow: visible;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .collapsible--open {
+    align-items: center;
+  }
+
+  .nav-items {
+    display: flex;
+    align-content: center;
+    text-align: center;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+}
