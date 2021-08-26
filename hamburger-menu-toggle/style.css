@@ -39,10 +39,6 @@
   height: 100vh;
 }
 
-.nav-bar-collapsible--open .logo {
-  display: none;
-}
-
 .nav-item {
   list-style: none;
 }
@@ -57,11 +53,6 @@
     flex-direction: row;
     height: 6rem;
     width: 400px;
-  }
-
-  .logo {
-    flex-grow: 0.5;
-    display: inline-block;
   }
 
   .nav-items {
