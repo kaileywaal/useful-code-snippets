@@ -10,3 +10,6 @@ Simple CSS and JavaScript to easily toggle dark mode off and on.
 
 ### 2. Normalize CSS
 
+### 3. Hamburger Menu Toggle
+
+HTML, CSS, and JavaScript code required to create a custom hamburger animation that opens a menu when the screen is small.
